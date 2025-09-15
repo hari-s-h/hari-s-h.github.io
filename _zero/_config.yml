@@ -1,0 +1,23 @@
+
+
+title: "Harisankar's home page"
+description: "Naval Architect"
+remote_theme: "jekyll-theme-awesome"
+
+url: "http://harisankar.xyz"   # your custom domain
+baseurl: ""                     # empty since it's root domain
+
+author: "Harisankar"
+markdown: kramdown
+
+# Basic navigation
+nav:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+  - title: "Projects"
+    url: "/projects/"
+  - title: "Contact"
+    url: "/contact/"
+
