@@ -1,20 +1,167 @@
-# Dependencies
-markdown: redcarpet
-highlighter: pygments
-# Permalinks
-permalink: pretty
-relative_permalinks: true
-# Setup
-title: Hyde
-tagline: "A Jekyll theme"
-description: 'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url: http://harisankar.xyz
-baseurl: /
+# =====================================================
+# Jekyll Site Configuration for Hyde Theme by mdo
+# =====================================================
+
+# ----------------------
+# Site Settings
+# ----------------------
+title: "Harisankar — Naval Architect & Engineer"
+description: >-
+  Personal website and portfolio of Harisankar, featuring projects in naval
+  architecture, programming, and applied sciences.
+baseurl: "" # Leave empty unless site is served from subpath (e.g., "/blog")
+url: "https://harisankar.xyz" # Full URL to your site
+
+# Author details
 author:
   name: "Harisankar"
-  url: https://twitter.com/
+  email: "your-email@example.com"
+  url: "https://harisankar.xyz"
+  twitter: "your_twitter_handle"
+  github: "harisankar-dev"
+  linkedin: "harisankar"
+
+# ----------------------
+# Build Settings
+# ----------------------
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+permalink: /:categories/:year/:month/:day/:title/
 paginate: 5
-# Custom vars
-#version: 2.1.0
-#github:
-#  repo:           https://github.com/poole/hyde
+paginate_path: "/page:num/"
+
+# ----------------------
+# Theme + Plugins
+# ----------------------
+remote_theme: poole/hyde
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-archives
+  - jekyll-remote-theme
+  - jekyll-redirect-from
+
+# ----------------------
+# Hyde Theme Options
+# ----------------------
+# Sidebar position (left | right)
+hyde:
+  sidebar: left
+
+  # Skin colors (default | dark | red | orange | yellow | green | cyan | blue | magenta | brown | gray)
+  theme: "blue"
+
+# ----------------------
+# Navigation
+# ----------------------
+# Sidebar links
+nav:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
+  - title: "Blog"
+    url: /blog/
+  - title: "Contact"
+    url: /contact/
+
+# ----------------------
+# Collections
+# ----------------------
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# ----------------------
+# Archives
+# ----------------------
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+    - year
+    - month
+  layouts:
+    year: archive
+    month: archive
+    category: archive
+    tag: archive
+  permalinks:
+    year: "/:year/"
+    month: "/:year/:month/"
+    category: "/category/:name/"
+    tag: "/tag/:name/"
+
+# ----------------------
+# SEO & Social
+# ----------------------
+seo:
+  type: "Person"
+  name: "Harisankar"
+  description: "Professional engineer and naval architect."
+  twitter:
+    username: "@your_twitter_handle"
+  facebook:
+    admins: ""
+  social:
+    name: "Harisankar"
+    links:
+      - "https://github.com/harisankar-dev"
+      - "https://linkedin.com/in/harisankar"
+      - "https://twitter.com/your_twitter_handle"
+
+# ----------------------
+# Feed
+# ----------------------
+feed:
+  path: feed.xml
+
+# ----------------------
+# Sitemap
+# ----------------------
+sitemap:
+  exclude:
+    - /assets/
+    - /node_modules/
+    - /Gemfile
+    - /Gemfile.lock
+
+# ----------------------
+# Exclusions
+# ----------------------
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+
+# ----------------------
+# Defaults
+# ----------------------
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+      share: true
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
