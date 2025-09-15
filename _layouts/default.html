@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    {%- seo -%}
+    <link rel="stylesheet" href="{{ "/public/css/poole.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/public/css/syntax.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/public/css/hyde.css" | relative_url }}">
+  </head>
+  <body class="theme-base-{{ site.hyde.theme }}">
+    <div class="sidebar">
+      <div class="container sidebar-sticky">
+        <div class="sidebar-about">
+          <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+          <p>{{ site.description }}</p>
+        </div>
+        <nav class="sidebar-nav">
+          {% for item in site.nav %}
+            <a class="sidebar-nav-item" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+    </div>
+    <div class="content container">
+      {{ content }}
+    </div>
+  </body>
+</html>

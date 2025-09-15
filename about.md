@@ -4,7 +4,14 @@ title: "About"
 permalink: /about/
 ---
 
-# About Me
+## About Me
 
-I’m Harisankar, a professional Naval Architect with a passion for ship design,  
-engineering, and exploring the science of the sea.
+I am **Harisankar**, a professional engineer and naval architect.
+My interests span across:
+
+- Naval architecture & marine engineering
+- Computational algorithms
+- Programming in Python, C, and modern frameworks
+- Applied physics and scientific problem solving
+
+This website is a place to share projects, articles, and research.

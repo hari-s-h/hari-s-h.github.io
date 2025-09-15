@@ -1,9 +1,14 @@
 ---
-layout: home
-title: "Home"
+layout: page
+title: "Welcome"
+permalink: /
 ---
 
-# Welcome to my site
+# Welcome to My Website
 
-I’m **Harisankar**, a Naval Architect.  
-This site showcases my projects, ideas, and thoughts on naval engineering.
+This is the personal website of **Harisankar**, Naval Architect & Engineer.
+Explore projects, technical notes, and insights on engineering and programming.
+
+- Check out my [Projects](/projects/)
+- Learn more [About Me](/about/)
+- Get in [Contact](/contact/)
