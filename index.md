@@ -10,6 +10,7 @@ This is the personal website of **Harisankar**, Naval Architect & Engineer.
 
 Lets explore projects, technical notes, and insights on engineering and programming.
 
-- Check out my [Projects](/projects/)
-- Learn more [About Me](/about/)
-- Get in [Contact](/contact/)
+- [My Projects](/projects/)
+- [Posts](/posts/)
+- [About Me](/about/)
+- [Contact](/contact/)
