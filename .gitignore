@@ -7,6 +7,7 @@ _site/
 vendor/
 .DS_Store
 gitrun.py
+.DS_Store
 
 # Ignore docs files
 _gh_pages
