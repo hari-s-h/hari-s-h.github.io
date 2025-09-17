@@ -5,7 +5,7 @@
 # ----------------------
 # Site Settings
 # ----------------------
-title: "Harisankar — Naval Architect & Engineer"
+title: "Harisankar — Naval Architect"
 description: >-
   Personal website and portfolio of Harisankar, featuring projects in naval
   architecture, programming, and applied sciences.
@@ -15,11 +15,11 @@ url: "https://harisankar.xyz" # Full URL to your site
 # Author details
 author:
   name: "Harisankar"
-  email: "your-email@example.com"
+  email: "hari@example.com"
   url: "https://harisankar.xyz"
-  twitter: "your_twitter_handle"
-  github: "harisankar-dev"
-  linkedin: "harisankar"
+  twitter: "*******"
+  github: "*******"
+  linkedin: "******"
 
 # ----------------------
 # Build Settings

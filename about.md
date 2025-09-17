@@ -14,4 +14,4 @@ My interests span across:
 - Programming in Python, C, and modern frameworks
 - Applied physics and scientific problem solving
 
-This website is a place to share projects, articles, and research.
+This website is a place to share my interests, articles.
