@@ -1,0 +1,7 @@
+title: "Blog"
+description: "Minimal blog styled like rfc-editor.org"
+baseurl: ""   # leave empty for user.github.io/repo
+url: ""       # will be set by GitHub Pages
+markdown: kramdown
+theme: null   # disable default theme since we use custom layout
+author: harisankar sh
