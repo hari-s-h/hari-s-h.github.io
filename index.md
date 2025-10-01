@@ -1,11 +1,9 @@
 ---
 layout: default
-title: RFC-0001 Example Blog Post
+title: Example Blog Post
 ---
-RFC-0001                 Example Blog Post                October 2025
-
+Example Blog Post                October 2025
 ## Purpose
-
 This blog is styled in the format of an RFC, using monospaced text,
 limited width, and minimal formatting. The intent is to maintain
 clarity and simplicity.
