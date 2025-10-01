@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/rfc.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <p>{{ site.description }}</p>
+    <hr>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <hr>
+    <p>Generated with Jekyll on GitHub Pages</p>
+  </footer>
+</body>
+</html>
