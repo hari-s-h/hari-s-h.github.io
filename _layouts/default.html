@@ -6,11 +6,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/rfc.css' | relative_url }}">
 </head>
 <body>
-  <header>
-    <h1>{{ site.title }}</h1>
-    <p>{{ site.description }}</p>
-    <hr>
-  </header>
+ {% include header.html}
 
   <main>
     {{ content }}
