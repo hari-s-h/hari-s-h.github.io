@@ -1,20 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/rfc.css' | relative_url }}">
-</head>
-<body>
- {% include header.html}
+    <head>
+        <meta charset="UTF-8" />
+        <title>{{ page.title }} | {{ site.title }}</title>
+        <link
+            rel="stylesheet"
+            href="{{ '/assets/css/rfc.css' | relative_url }}"
+        />
+    </head>
+    <body>
+        {% include header.html}
 
-  <main>
-    {{ content }}
-  </main>
+        <main>{{ content }}</main>
 
-  <footer>
-    <hr>
-    <p>Generated with Jekyll on GitHub Pages</p>
-  </footer>
-</body>
+        {% include footer.html}
+    </body>
 </html>
