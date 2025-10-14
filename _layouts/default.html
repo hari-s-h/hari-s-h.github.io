@@ -1,18 +1,15 @@
-<!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>{{ page.title }} | {{ site.title }}</title>
-        <link
-            rel="stylesheet"
-            href="{{ '/assets/css/rfc.css' | relative_url }}"
-        />
-    </head>
-    <body>
-        {% include header.html}
+<!DOCTYPE html>
+<html lang="en-us">
 
-        <main>{{ content }}</main>
+  {% include head.html %}
 
-        {% include footer.html}
-    </body>
+  <body>
+
+    {% include sidebar.html %}
+
+    <div class="content container">
+      {{ content }}
+    </div>
+
+  </body>
 </html>
