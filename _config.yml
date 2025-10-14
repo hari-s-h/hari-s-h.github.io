@@ -7,3 +7,23 @@ theme: null   # disable default theme since we use custom layout
 author:
   name: "Harisankar SH"
   email: "har.i@icloud.com"
+   url:            https://twitter.com/mdo
+
+
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/
